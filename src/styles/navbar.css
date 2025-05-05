@@ -1,0 +1,59 @@
+
+.navbar{
+font-family: 'Audiowide', cursive;
+background-color: rgba(43, 56, 193, 0.032);
+padding:  18px 8px;
+display: flex;
+justify-content: end;
+gap: 15px;
+padding: 25px;
+transition: all 0.5s;
+
+}
+
+
+.navbar:hover{
+
+    /* لون التوهج */
+    box-shadow: 0 4px 12px #00ffff50;
+    /* التوهج الممتد */
+    border-radius: 2px;
+}
+
+.list a{
+    text-decoration: none;
+        position: relative;
+        transition: all 0.5s;
+        z-index: 2;
+        color: rgb(255, 255, 255);
+   margin-right: 50px;
+}
+a::before,
+a::after {
+    content: "";
+    position: absolute;
+    height: 50%;
+    width: 0;
+    background-color: #24adad;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+a::before {
+    right: 0;
+    top: 0;
+}
+
+a::after {
+    left: 0;
+    bottom: 0;
+}
+
+a:hover::before,
+a:hover::after {
+    width: 100%;
+}
+.logo{
+    position: absolute;
+right: 500px;
+}

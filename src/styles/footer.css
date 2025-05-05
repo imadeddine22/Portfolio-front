@@ -1,0 +1,23 @@
+.footer {
+    background-color: #060739;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+    font-size: 1rem;
+margin-bottom: 0;
+ 
+}
+.footer{
+    position: relative;
+    top: 1100px;
+
+
+
+    width: 100%;
+}
+.footer:hover {
+    /* لون التوهج */
+        box-shadow: 4px 4px 12px #24adad;
+        /* التوهج الممتد */
+        border-radius: 2px;
+}

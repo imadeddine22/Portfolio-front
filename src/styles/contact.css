@@ -1,0 +1,345 @@
+
+.hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.hero-btn {
+    cursor: pointer;
+    position: relative;
+    width: 102px;
+    height: 195px;
+    border: none;
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.left-hero {
+    border-radius: 9.5rem 0 0 10rem;
+}
+
+.left-hero-face {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 170px;
+    border: none;
+    border-radius: 9.5rem 0 0 10rem;
+    transition: all 0.5s ease;
+    background: linear-gradient(90deg,
+            #9d0000 5%,
+            #af0000 10%,
+            #cf0102 30%,
+            #b10101 50%,
+            #cf0102 70%,
+            #c00101 80%,
+            #c00101 95%);
+    right: 0;
+    box-shadow: inset 2px 0px 5px rgba(0, 0, 0);
+}
+
+.left-eye {
+    position: absolute;
+    background-color: #090b0c;
+    border: none;
+    width: 45px;
+    height: 35px;
+    left: 20px;
+    clip-path: polygon(1% 1%,
+            99% 59%,
+            91% 73%,
+            85% 81%,
+            77% 89%,
+            71% 94%,
+            65% 98%,
+            58% 99%,
+            52% 99%,
+            44% 98%,
+            38% 97%,
+            33% 92%,
+            28% 85%,
+            23% 75%);
+    transition: all 0.5s ease;
+}
+
+.right-hero {
+    border-radius: 0 9.5rem 10rem 0;
+}
+
+.right-hero-face {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 85px;
+    height: 170px;
+    left: 0;
+    border: none;
+    border-radius: 0 9.5rem 10rem 0;
+    box-shadow: inset 2px 0 5px rgba(0, 0, 0);
+    background: linear-gradient(90deg,
+            #fce620 5%,
+            #ebd61d 10%,
+            #f5e024 30%,
+            #e6d31d 50%,
+            #f5e024 70%,
+            #ebd61d 80%,
+            #fce620 95%);
+    transition: all 0.5s ease;
+}
+
+.right-mask {
+    position: absolute;
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    width: 130px;
+    height: 190px;
+    bottom: 15px;
+    right: -30px;
+    transition: all 0.5s ease;
+    clip-path: polygon(98% 1%,
+            85% 15%,
+            73% 28%,
+            61% 38%,
+            49% 46%,
+            35% 50%,
+            23% 54%,
+            15% 57%,
+            10% 66%,
+            13% 78%,
+            21% 86%,
+            32% 87%,
+            54% 83%,
+            42% 100%,
+            62% 89%,
+            73% 85%,
+            81% 73%,
+            85% 63%,
+            90% 40%,
+            93% 28%);
+}
+
+.right-eye {
+    position: absolute;
+    border: none;
+    background-color: #090b0c;
+    box-shadow: none;
+    width: 45px;
+    height: 35px;
+    transition: all 0.5s ease;
+    clip-path: polygon(1% 1%,
+            99% 59%,
+            91% 73%,
+            85% 81%,
+            77% 89%,
+            71% 94%,
+            65% 98%,
+            58% 99%,
+            52% 99%,
+            44% 98%,
+            38% 97%,
+            33% 92%,
+            28% 85%,
+            23% 75%);
+    transform: rotateY(180deg);
+}
+
+.hero-container:hover .left-hero {
+    background: linear-gradient(90deg,
+            #9d0000 5%,
+            #af0000 10%,
+            #cf0102 30%,
+            #b10101 50%,
+            #cf0102 70%,
+            #c00101 80%,
+            #c00101 95%);
+    box-shadow: 0px 0px 5px #9e1f35;
+}
+
+.hero-container:hover .right-hero {
+    background: linear-gradient(90deg,
+            #fce620 5%,
+            #ebd61d 10%,
+            #f5e024 30%,
+            #e6d31d 50%,
+            #f5e024 70%,
+            #ebd61d 80%,
+            #fce620 95%);
+    box-shadow: 0px 0px 5px #feff1e;
+}
+
+.hero-container:hover .left-hero-face {
+    background: #090b0c;
+    right: 8px;
+    box-shadow: inset 5px 5px 8px rgba(0, 0, 0);
+}
+
+.hero-container:hover .right-hero-face {
+    background: transparent;
+    left: 8px;
+    box-shadow: inset 2px 0 5px rgba(0, 0, 0);
+}
+
+.hero-container:hover .left-eye {
+    background-color: #ececec;
+}
+
+.hero-container:hover .right-mask {
+    background-color: #090b0c;
+    width: 130px;
+    height: 190px;
+    bottom: 15px;
+    right: -35px;
+    transform: rotateY(0deg);
+    clip-path: polygon(98% 1%,
+            85% 15%,
+            73% 28%,
+            61% 38%,
+            49% 46%,
+            35% 50%,
+            23% 54%,
+            15% 57%,
+            10% 66%,
+            13% 78%,
+            21% 86%,
+            32% 87%,
+            54% 83%,
+            42% 100%,
+            62% 89%,
+            73% 85%,
+            81% 73%,
+            85% 63%,
+            90% 40%,
+            93% 28%);
+}
+
+.hero-container:hover .right-eye {
+    background-color: #ececec;
+}
+
+.hero-container:active .hero-btn:not(:hover) {
+    filter: grayscale(1);
+}
+
+.hero-container:active .hero-btn:hover {
+    transform: scale(1.1);
+}
+
+
+
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    font-family: inherit;
+    gap: 10px;
+    padding-inline: 2em;
+    padding-bottom: 0.4em;
+    background-color: #171717;
+    border-radius: 20px;
+   
+}
+
+.contact-title {
+    text-align: center;
+    margin: 2em;
+    color: #64ffda;
+    font-size: 1.2em;
+    background-color: transparent;
+    align-self: center;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5em;
+    border-radius: 10px;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #171717;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.form-input {
+    background: none;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ccd6f6;
+    padding-inline: 1em;
+}
+
+.submit-btn {
+    cursor: pointer;
+    margin-bottom: 3em;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: #64ffda;
+    font-weight: bold;
+    outline: 1px solid #64ffda;
+    transition: all ease-in-out 0.3s;
+}
+
+.submit-btn:hover {
+    transition: all ease-in-out 0.3s;
+    background-color: #64ffda;
+    color: #000;
+    cursor: pointer;
+    box-shadow: inset 2px 5px 10px rgb(5, 5, 5);
+}
+
+.contact-container {
+    width: 400px;
+    background-image: linear-gradient(163deg, #64ffda 0%, #64ffda 100%);
+    border-radius: 22px;
+    transition: all 0.3s;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.contact-container:hover {
+    box-shadow: 0px 0px 30px 1px rgba(100, 255, 218, 0.3);
+}
+
+.contact-inner {
+    border-radius: 0;
+    transition: all 0.2s;
+}
+
+.contact-inner:hover {
+    transform: scale(0.98);
+    border-radius: 20px;
+}
+
+
+
+
+
+
+
+.contact-container{
+position: relative;
+bottom: 60px;
+
+
+}
+.hero-container{
+   position: relative;
+   bottom: 50px;
+
+}
